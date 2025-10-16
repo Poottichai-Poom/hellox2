@@ -4,4 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/hellox2/',
+  build: {
+    outdir:'dist',
+    assetsDir:'assets'
+  },
+  server: {
+    allowedHosts: ['b0f26d162fb6.ngrok-free.app'], //ngrok http 5173
+  }
+
 })
